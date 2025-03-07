@@ -1,0 +1,36 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/idnex.js",
+    "dev": "nodemon ./src/index.js",
+    "lint": "eslint .",
+    "test": "standard && node my-tests.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "globals": "^16.0.0",
+    "mongoose": "^8.9.6",
+    "nodemon": "^3.1.9",
+    "standard": "^17.1.2"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose-unique-validator": "^5.0.0",
+    "nodemailer": "^6.10.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  }
+}
